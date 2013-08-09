@@ -1,0 +1,40 @@
+.playbtn{
+    width: 66px;
+    height: 66px;
+    border: 0px;
+    background: url(../images/mPlayerBtn.png);
+}
+.playbtn:hover{
+    background: url(../images/mPlayerBtn.png) -81px 0;
+}
+.pausebtn{
+    width: 66px;
+    height: 66px;
+    border: 0px;
+    background: url(../images/mPlayerBtn.png) -163px 0;
+}
+.pausebtn:hover{
+    background: url(../images/mPlayerBtn.png) -243px 0;
+}
+.prevbtn{
+    width: 42px;
+    height: 42px;
+    border: 0px;
+    background: url(../images/mPlayerBtn.png) -81px -43px;
+    background-size: auto 85px;
+}
+.prevbtn:hover{
+    background: url(../images/mPlayerBtn.png) -124px -43px;
+    background-size: auto 85px;
+}
+.nextbtn{
+    width: 42px;
+    height: 42px;
+    border: 0px;
+    background: url(../images/mPlayerBtn.png) -1px -43px;
+    background-size: auto 85px;
+}
+.nextbtn:hover{
+    background: url(../images/mPlayerBtn.png) -44px -43px;
+    background-size: auto 85px;
+}
