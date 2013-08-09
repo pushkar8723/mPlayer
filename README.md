@@ -19,7 +19,7 @@ How to use
 ```
 
 ### Initialize Script
-'''
+```JavaScript
 $(document).ready(function() {
     $('#music').mPlayer({
         'music/Michio - Ninon (Rumba).mp3': 'Ninon - Michino',
@@ -30,14 +30,14 @@ $(document).ready(function() {
         'music/The Secession - Decide.ogg': ''
     });
 });
-'''
+```
 
 Metods Available
 ----------------
 
 Methods available:
-* play : Plays the current song.
-* pause : Pause the current song.
-* togglePlay : Toggles the current song between play and pause.
-* next : Loads and play the next song in the list.
-* prev : Loads and play the previous song in the list.
+* **play :** Plays the current song.
+* **pause :** Pause the current song.
+* **togglePlay :** Toggles the current song between play and pause.
+* **next :** Loads and play the next song in the list.
+* **prev :** Loads and play the previous song in the list.
