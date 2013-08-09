@@ -25,6 +25,13 @@
                 });
                 SyntaxHighlighter.all();
             });
+            $(window).bind('scroll', function() {
+                if (window.scrollY == 0) {
+                    $('#header').css({'box-shadow': 'none'});
+                } else {
+                    $('#header').css({'box-shadow': '0 0 10px #000'});
+                }
+            });
         </script>
         <link href="css/bootstrap.css" rel="stylesheet">
     </head>
@@ -34,8 +41,14 @@
                 <a target="_blank" href="https://github.com/pushkar8723/mPlayer">Fork me on GitHub</a>
             </div>
         </div>
+        <div id="header" class="container navbar navbar-inverse navbar-fixed-top" style="width: 960px;">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="#"><h1>mPlayer Demo</h1></a>
+                </div>
+            </div>
+        </div> 
         <div id="container" class="container">
-            <h1>mPlayer Demo</h1>
             <div id="music" align ="center" class="hero-unit"></div>
             <h3>How to Use</h3><hr/>
             Import Scripts and Stylesheets<br/>
