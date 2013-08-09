@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mPlayer Demo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mPlayer.js"></script>
+        <script src='syntax-highlighter/shCore.js' type='text/javascript'></script>
+        <script src='syntax-highlighter/shBrushPhp.js' type='text/javascript'></script>
+        <script src='syntax-highlighter/shBrushJScript.js' type='text/javascript'></script>
+        <script src='syntax-highlighter/shBrushXml.js' type='text/javascript'></script>
+        <link type="text/css" rel="stylesheet" href="syntax-highlighter/shCoreDefault.css"/>
+        <link type="text/css" rel="stylesheet" href="css/jquery.mPlayer.css"/>
+        <link type="text/css" rel="stylesheet" href="css/ribbon.css"/>
+        <script>
+            $(document).ready(function() {
+                $('#music').mPlayer({
+                    'music/Michio - Ninon (Rumba).mp3': 'Ninon - Michino',
+                    'music/Michio - Ninon (Rumba).ogg': '',
+                    'music/The Secession - Arrange.mp3': 'Arrange - The Secession',
+                    'music/The Secession - Arrange.ogg': '',
+                    'music/The Secession - Decide.mp3': 'Decide - The Secession',
+                    'music/The Secession - Decide.ogg': ''
+                });
+                SyntaxHighlighter.all();
+            });
+        </script>
+        <link href="css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="github-fork-ribbon-wrapper right" style="position: fixed;">
+            <div class="github-fork-ribbon">
+                <a target="_blank" href="https://github.com/pushkar8723/mPlayer">Fork me on GitHub</a>
+            </div>
+        </div>
+        <div class="container">
+            <h1>mPlayer Demo</h1>
+            <div id="music" align ="center" class="hero-unit"></div>
+            <h3>How to Use</h3><hr/>
+            Import Scripts and Stylesheets<br/>
+            <pre class='brush: php;html-script: true'>
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script type="text/javascript" src="js/jquery.mPlayer.js"></script>
+                <link type="text/css" rel="stylesheet" href="css/jquery.mPlayer.css" />
+            </pre>
+            HTML Script<br/>
+            <pre class='brush: php;html-script: true'>
+                <div id="music"></div>
+            </pre>
+            Initialize Script<br/>
+            <pre class='brush: js;'>
+                $(document).ready(function() {
+                    $('#music').mPlayer({
+                        'music/Michio - Ninon (Rumba).mp3': 'Ninon - Michino',
+                        'music/Michio - Ninon (Rumba).ogg': '',
+                        'music/The Secession - Arrange.mp3': 'Arrange - The Secession',
+                        'music/The Secession - Arrange.ogg': '',
+                        'music/The Secession - Decide.mp3': 'Decide - The Secession',
+                        'music/The Secession - Decide.ogg': ''
+                    });
+                });
+            </pre>
+            <h3>Methods</h3>
+            Calling a method
+            <pre class='brush: js;'>
+                $('#music').mPlayer('play');
+            </pre>
+            Methods available:
+            <ul>
+                <li><b>play : </b>Plays the current song.</li>
+                <li><b>pause : </b>Pause the current song.</li>
+                <li><b>togglePlay : </b>Toggles the current song between play and pause.</li>
+                <li><b>next : </b>Loads and play the next song in the list.</li>
+                <li><b>prev : </b>Loads and play the previous song in the list.</li>
+            </ul>
+            <hr/>
+            Author : <a href='http://pushkaranand.com'>Pushkar Anand</a><br/><br/>
+        </div>
+    </body>
+</html>
