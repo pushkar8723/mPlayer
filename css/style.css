@@ -1,0 +1,11 @@
+body{
+    background: url(../images/retina_wood.png);
+}
+#container{
+    padding: 10px;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.footer{
+    padding: 5px 0;
+}
