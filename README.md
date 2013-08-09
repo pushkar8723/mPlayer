@@ -7,19 +7,19 @@ How to use
 ----------
 
 ### Import Scripts and Stylesheets
-<code>
+```HTML
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.mPlayer.js"></script>
 <link type="text/css" rel="stylesheet" href="css/jquery.mPlayer.css" />
-</code>
+```
 
 ### HTML Script
-<code>
+```HTML
 <div id="music"></div>
-</code>
+```
 
 ### Initialize Script
-<code>
+'''
 $(document).ready(function() {
     $('#music').mPlayer({
         'music/Michio - Ninon (Rumba).mp3': 'Ninon - Michino',
@@ -30,7 +30,7 @@ $(document).ready(function() {
         'music/The Secession - Decide.ogg': ''
     });
 });
-</code>
+'''
 
 Metods Available
 ----------------
