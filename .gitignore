@@ -1,7 +1,0 @@
-*.class
-*~
-nbproject/
-# Package Files #
-*.jar
-*.war
-*.ear
