@@ -41,3 +41,8 @@ Methods available:
 * **togglePlay :** Toggles the current song between play and pause.
 * **next :** Loads and play the next song in the list.
 * **prev :** Loads and play the previous song in the list.
+
+License
+-------
+
+Released under the [MIT License](http://opensource.org/licenses/MIT).
